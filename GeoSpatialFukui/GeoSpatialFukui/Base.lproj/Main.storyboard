@@ -4,7 +4,9 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,13 +14,87 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GeoSpatialFukui" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="WWT-qx-8gp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="hMH-bT-6lu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="670" y="733"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ssN-Vd-R7Z">
+            <objects>
+                <viewController id="FyN-wQ-GH0" customClass="ViewController" customModule="GeoSpatialFukui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="dOh-Ie-FWJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m4v-Xi-85Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cCe-IR-dZ6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="9v3-Pp-QnI"/>
+                    <connections>
+                        <outlet property="mapView" destination="m4v-Xi-85Y" id="bWt-dD-M4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YoJ-PS-lvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1577" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kgF-Rz-oMi">
+            <objects>
+                <viewController id="kba-fR-mjU" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="PZu-dz-O4r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VCe-lO-jEV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="aVR-dM-6AW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETH-uY-9HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IdH-Z2-QmC">
+            <objects>
+                <tabBarController id="Jb0-Ab-9I4" customClass="TabBarController" customModule="GeoSpatialFukui" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8UO-HH-QhB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kba-fR-mjU" kind="relationship" relationship="viewControllers" id="tdZ-TB-Y6f"/>
+                        <segue destination="FyN-wQ-GH0" kind="relationship" relationship="viewControllers" id="2rO-8S-saL"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="cs4-ar-29q"/>
+                        <segue destination="XH5-XZ-S4s" kind="relationship" relationship="viewControllers" id="3XE-eD-5oV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pk2-hN-VKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="18"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="PlA-ee-jQF">
+            <objects>
+                <viewController id="XH5-XZ-S4s" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="ZBZ-jF-Mds">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oEA-4m-jQ9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" id="4v1-73-top"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELw-Ro-qZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="-714"/>
         </scene>
     </scenes>
 </document>

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		397B9244220FAE0200BA658A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397B9243220FAE0200BA658A /* MapKit.framework */; };
-		397B9246220FAF0F00BA658A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397B9245220FAF0F00BA658A /* CoreLocation.framework */; };
+		397B9248220FB19C00BA658A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397B9247220FB19C00BA658A /* MapKit.framework */; };
+		397B924A220FB1A600BA658A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397B9249220FB1A600BA658A /* CoreLocation.framework */; };
+		397B924C220FBF8300BA658A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B924B220FBF8300BA658A /* TabBarController.swift */; };
 		991110CC220E8F9900920F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991110CB220E8F9900920F3B /* AppDelegate.swift */; };
 		991110CE220E8F9900920F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991110CD220E8F9900920F3B /* ViewController.swift */; };
 		991110D1220E8F9900920F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991110CF220E8F9900920F3B /* Main.storyboard */; };
@@ -18,8 +19,9 @@
 
 /* Begin PBXFileReference section */
 		08239F15C4D7E0CA72493DC4 /* Pods-GeoSpatialFukui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSpatialFukui.debug.xcconfig"; path = "Target Support Files/Pods-GeoSpatialFukui/Pods-GeoSpatialFukui.debug.xcconfig"; sourceTree = "<group>"; };
-		397B9243220FAE0200BA658A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		397B9245220FAF0F00BA658A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		397B9247220FB19C00BA658A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		397B9249220FB1A600BA658A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		397B924B220FBF8300BA658A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4152DE6455EBFF319D1D69DA /* Pods_GeoSpatialFukui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSpatialFukui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F1E7D484F121FAC2112CCA /* Pods-GeoSpatialFukui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSpatialFukui.release.xcconfig"; path = "Target Support Files/Pods-GeoSpatialFukui/Pods-GeoSpatialFukui.release.xcconfig"; sourceTree = "<group>"; };
 		991110C8220E8F9900920F3B /* GeoSpatialFukui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoSpatialFukui.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,8 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				397B9246220FAF0F00BA658A /* CoreLocation.framework in Frameworks */,
-				397B9244220FAE0200BA658A /* MapKit.framework in Frameworks */,
+				397B924A220FB1A600BA658A /* CoreLocation.framework in Frameworks */,
+				397B9248220FB19C00BA658A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,7 @@
 				991110D2220E8F9B00920F3B /* Assets.xcassets */,
 				991110D4220E8F9B00920F3B /* LaunchScreen.storyboard */,
 				991110D7220E8F9B00920F3B /* Info.plist */,
+				397B924B220FBF8300BA658A /* TabBarController.swift */,
 			);
 			path = GeoSpatialFukui;
 			sourceTree = "<group>";
@@ -87,8 +90,8 @@
 		F102161453344534FA6720C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				397B9245220FAF0F00BA658A /* CoreLocation.framework */,
-				397B9243220FAE0200BA658A /* MapKit.framework */,
+				397B9249220FB1A600BA658A /* CoreLocation.framework */,
+				397B9247220FB19C00BA658A /* MapKit.framework */,
 				4152DE6455EBFF319D1D69DA /* Pods_GeoSpatialFukui.framework */,
 			);
 			name = Frameworks;
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397B924C220FBF8300BA658A /* TabBarController.swift in Sources */,
 				991110CE220E8F9900920F3B /* ViewController.swift in Sources */,
 				991110CC220E8F9900920F3B /* AppDelegate.swift in Sources */,
 			);
